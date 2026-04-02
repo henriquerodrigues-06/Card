@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Configuração do corpo da página para empurrar o footer para baixo */
+body {
+    background-color: #e2ceb1;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Ocupa todo o espaço vertical disponível no body */
+    
+    /* A Fundação do Desafio: */
+    display: flex; 
+    
+    /* Centraliza o card horizontalmente */
+    justify-content: center; 
+    
+    /* Centraliza o card verticalmente */
+    align-items: center; 
+    
+    padding: 20px;
+}
+
+/* O Componente Card */
+.profile-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 350px;
+    padding: 30px;
+    
+    border: 3px solid #5C534D; 
+    border-radius: 12px;
+    box-shadow: 8px 8px 0px #F5F1E9; 
+
+    /* Flexbox interno para organizar os elementos do card de cima para baixo */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 25px;
+}
+
+/* Identidade e Textos */
+.profile-card header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    border: 4px dashed #5C534D; 
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.profile-card h1 {
+    font-size: 1.6rem;
+    color: #574b48;
+    margin-bottom: 8px;
+}
+
+.mission {
+    font-size: 1rem;
+    color: #8a817e;
+    font-weight: bold;
+}
+
+/* Navegação e Links */
+.social-links {
+    width: 100%;
+}
+
+.social-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: #5C534D;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    background-color: #F5F1E9;
+    color: #5C534D;
+    border: 2px solid #5C534D;
+    text-decoration: underline; 
+    outline: none;
+}
+
+/* O Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.9rem;
+}
